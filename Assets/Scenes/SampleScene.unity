@@ -26321,7 +26321,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461434539}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1461434538}
+    - targetCorrespondingSourceObject: {fileID: -4925889090095924591, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1776509123}
+    - targetCorrespondingSourceObject: {fileID: -290427560300791627, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1327154274}
   m_SourcePrefab: {fileID: 100100000, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
 --- !u!1 &863562429
 GameObject:
@@ -38184,6 +38196,30 @@ Transform:
   - {fileID: 1277076106}
   m_Father: {fileID: 402176315}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &1327154270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -290427560300791627, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+  m_PrefabInstance: {fileID: 862195025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1327154274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327154270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b64e6584f3a49a5b30287827ab3f516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JusticeScale.Scripts.Scales.OverlapScale
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  weight: 0
+  capsuleLength: 1.5
+  capsuleRadius: 0.5
+  capsuleOffsetHeight: 0.5
 --- !u!1 &1330805288
 GameObject:
   m_ObjectHideFlags: 0
@@ -41860,6 +41896,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448817103}
   m_Mesh: {fileID: -8860506541300426539, guid: 47f590c0cde9e454cb91906d9eec2f37, type: 3}
+--- !u!1 &1461434534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+  m_PrefabInstance: {fileID: 862195025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1461434538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461434534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57bc8f46e7805e1498eca027f3419f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JusticeScale.Scripts.ScaleBeamRotation
+  scaleController: {fileID: 0}
+  balanceBeam: {fileID: 2062005268}
+  blendRotation: 15
+--- !u!114 &1461434539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461434534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77cc71e5d9b8ba643813860e7cf4b299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JusticeScale.Scripts.ScaleController
+  leftScale: {fileID: 1776509123}
+  rightScale: {fileID: 1327154274}
+  maxWeightDifference: 10
+  balanceSmoothTime: 0.05
+  weightResultSmoothed: 0
 --- !u!1 &1463000098
 GameObject:
   m_ObjectHideFlags: 0
@@ -46358,6 +46431,69 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1001 &1650741161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.916
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 51.56467
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      propertyPath: m_Name
+      value: Kettlebell
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876053080}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1876053081}
+  m_SourcePrefab: {fileID: 100100000, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
 --- !u!1 &1656155957
 GameObject:
   m_ObjectHideFlags: 0
@@ -48962,6 +49098,30 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775320740}
   m_Mesh: {fileID: -8429030512784514525, guid: 2567f26ca9a042f4daf30a7161af936e, type: 3}
+--- !u!1 &1776509119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4925889090095924591, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+  m_PrefabInstance: {fileID: 862195025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1776509123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776509119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b64e6584f3a49a5b30287827ab3f516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JusticeScale.Scripts.Scales.OverlapScale
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  weight: 0
+  capsuleLength: 1.5
+  capsuleRadius: 0.5
+  capsuleOffsetHeight: 0.5
 --- !u!1 &1783464065
 GameObject:
   m_ObjectHideFlags: 0
@@ -51291,6 +51451,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873155768}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1876053076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c9fdcd8ba368330488bc6d2193f8282f, type: 3}
+  m_PrefabInstance: {fileID: 1650741161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1876053080
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876053076}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &1876053081
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876053076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.135
+  m_Center: {x: 0, y: 0.05978385, z: 0}
 --- !u!1 &1876537765
 GameObject:
   m_ObjectHideFlags: 0
@@ -55327,6 +55540,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061553356}
   m_Mesh: {fileID: -8860506541300426539, guid: 47f590c0cde9e454cb91906d9eec2f37, type: 3}
+--- !u!4 &2062005268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7699475225631852239, guid: f8030ac516a6bdc49bcc7766bb7cf880, type: 3}
+  m_PrefabInstance: {fileID: 862195025}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2063110655
 GameObject:
   m_ObjectHideFlags: 0
@@ -65154,3 +65372,4 @@ SceneRoots:
   - {fileID: 1663673818}
   - {fileID: 2984062709983447035}
   - {fileID: 862195025}
+  - {fileID: 1650741161}
